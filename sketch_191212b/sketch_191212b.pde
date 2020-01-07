@@ -46,7 +46,7 @@ class Flue{
     vinkel     = random(0,2*PI);
     scale = a;
   }
-  //
+  //Fluens konstruktøre
   Flue(float a, float b,float c){
     positionX = a;
     positionY = b;
@@ -61,13 +61,13 @@ class Flue{
         (cos(vinkel)*(distanceFlyttet*scale) + positionX) <0)
         {
           fart*=-1;
-          //vinkel*=1.1;     
+            
     }
     if ((sin(vinkel)* (distanceFlyttet*scale)+positionY)> height ||
         (sin(vinkel)*(distanceFlyttet*scale) + positionY)<0)
         {
         fart*=-1;
-   //   vinkel*=1.1;
+
         }
   }
  
